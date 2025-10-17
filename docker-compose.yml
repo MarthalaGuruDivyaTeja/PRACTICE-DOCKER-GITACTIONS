@@ -4,7 +4,7 @@ services:
     container_name: mysql-db
     environment:
       MYSQL_ROOT_PASSWORD: docker
-      MYSQL_DATABASE: kluhosteldb
+      MYSQL_DATABASE: kludb
     ports:
       - "3307:3306"
     volumes:
@@ -13,7 +13,7 @@ services:
       - springboot-mysql-net
 
   backend:
-    image: marthalagurudivyateja/docker-backend:latest
+    image: marthalagurudivyateja/sdocker-backend:latest
     container_name: springboot
     ports:
       - "2025:2000"
@@ -24,7 +24,7 @@ services:
       - springboot-mysql-net
 
   frontend:
-    image: marthalagurudivyateja/docker-frontend:latest
+    image: marthalagurudivyateja/sdocker-frontend:latest
     container_name: react
     ports:
       - "3000:80"
