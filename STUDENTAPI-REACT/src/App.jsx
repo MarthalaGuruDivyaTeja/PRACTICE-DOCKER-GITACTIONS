@@ -1,10 +1,10 @@
-import StudentManager from "./components/StudentManager"
+import HostelManager from "./components/HostelManager"
 
 function App() {
 
   return (
     <>
-    <StudentManager/>
+    <HostelManager/>
     </>
   )
 }
