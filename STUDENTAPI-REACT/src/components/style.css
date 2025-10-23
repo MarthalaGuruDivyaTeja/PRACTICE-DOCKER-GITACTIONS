@@ -1,111 +1,119 @@
+/* 🌿 Clean Minimal Pastel Theme */
 .hostel-container {
   max-width: 1100px;
   margin: 50px auto;
   padding: 40px;
-  border-radius: 14px;
-  background: #ffffff;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 18px;
+  background: #fefefe;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
   font-family: 'Poppins', 'Segoe UI', sans-serif;
-  color: #333;
-  transition: all 0.3s ease;
+  color: #374151;
 }
 
 h2, h3 {
-  color: #2c3e50;
+  color: #2563eb;
   font-weight: 600;
-  margin-bottom: 18px;
-  border-left: 5px solid #3b82f6;
-  padding-left: 10px;
+  margin-bottom: 16px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 input, select {
   width: 100%;
   padding: 12px 14px;
   margin: 10px 0 18px;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  background-color: #f9fafb;
-  color: #333;
+  border: none;
+  border-radius: 10px;
+  background: #f3f6ff;
+  color: #374151;
+  font-size: 15px;
   box-sizing: border-box;
   transition: all 0.3s ease;
 }
 
 input:focus, select:focus {
   outline: none;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
-  background-color: #fff;
+  background: #e9efff;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
 }
 
 button {
-  padding: 12px 20px;
+  padding: 12px 22px;
   margin: 10px 10px 0 0;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   color: #fff;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+/* ✨ Soft button colors */
 .btn-blue {
-  background-color: #3b82f6;
+  background-color: #60a5fa;
 }
 
 .btn-blue:hover {
-  background-color: #2563eb;
+  background-color: #3b82f6;
   transform: translateY(-2px);
 }
 
 .btn-green {
-  background-color: #10b981;
+  background-color: #6ee7b7;
 }
 
 .btn-green:hover {
-  background-color: #059669;
+  background-color: #34d399;
   transform: translateY(-2px);
 }
 
 .btn-red {
-  background-color: #ef4444;
+  background-color: #fca5a5;
 }
 
 .btn-red:hover {
-  background-color: #dc2626;
+  background-color: #f87171;
   transform: translateY(-2px);
 }
 
 .btn-gray {
-  background-color: #9ca3af;
+  background-color: #d1d5db;
 }
 
 .btn-gray:hover {
-  background-color: #6b7280;
+  background-color: #9ca3af;
   transform: translateY(-2px);
 }
 
+/* 🌸 Smooth card-style table */
 table {
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 30px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.05);
+  margin-top: 25px;
+  border-spacing: 0 12px;
+  border-collapse: separate;
 }
 
 th, td {
-  padding: 14px 16px;
+  background-color: #ffffff;
+  padding: 16px 18px;
   text-align: left;
-  border-bottom: 1px solid #e5e7eb;
+  font-size: 15px;
+  border: none;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
 }
 
 th {
-  background-color: #f3f4f6;
-  color: #111827;
+  background: #e0f2fe;
   font-weight: 600;
+  color: #1e3a8a;
+  text-transform: uppercase;
 }
 
-tr:hover {
-  background-color: #f9fafb;
+tr:hover td {
+  background-color: #f0f9ff;
+  transition: background-color 0.3s ease;
+}
+
+tr + tr td {
+  margin-top: 8px;
 }
